@@ -1,2 +1,0 @@
-# ResumeTemplate
-Created with CodeSandbox

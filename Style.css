@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+body {
+  background: #eef2f7;
+  margin: 20px 50px;
+  line-height: 1.4;
+  /* height: 100vh; */
+  /* overflow: hidden; */
+}
+.container {
+  width: 80%;
+  margin: 20px 0 15px auto;
+}
+p {
+  color: #454749;
+}
+
+.wrapper {
+  background: #c8c9d2;
+  display: grid;
+  /* grid-gap: 20px; */
+  /* grid-template-columns: 1fr 2fr; */
+  grid-template-areas:
+    "head head head"
+    "left-main right-main right-main"
+    "ftr ftr ftr";
+}
+.head {
+  grid-area: head;
+  border-bottom: 2px solid #16243d;
+}
+.head h1 {
+  text-transform: none;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid #16243d;
+  background: #16243d;
+  color: #fff;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+.head p {
+  padding: 10px 10%;
+}
+.l-head {
+  background: #16243d;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+}
+.container h3,
+.container p {
+  margin-top: 10px;
+}
+.container h3 {
+  color: #2b3347;
+}
+.fas {
+  margin-right: 10px;
+}
+.left-main {
+  grid-area: left-main;
+  border-right: 2px solid #16243d;
+  padding: 0 50px;
+}
+.left-main .pic img {
+  width: 100%;
+  height: 250px;
+  text-align: center;
+}
+.right-main {
+  grid-area: right-main;
+  padding: 20px 50px;
+}
+
+.right-main .r-head {
+  padding: 7px;
+  border: 3px solid #16243d;
+  color: #2b3347;
+}
+.container-r {
+  width: 80%;
+  margin: 30px auto 30px 50px;
+  /* text-align: center; */
+}
+.container-r h3 {
+  color: #2b3347;
+  margin-bottom: 10px;
+}
+.wrapper-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0 30px;
+}
+.clr {
+  background-color: #2b3347 !important;
+  color: #fff;
+}
+.w3-light-grey {
+  margin: 10px 0 15px 0;
+}
+.ftr {
+  grid-area: ftr;
+  display: flex;
+  align-items: flex-end;
+  height: 70px;
+  border-top: 2px solid #16243d;
+}
+.ftr div {
+  height: 50px;
+  width: 100%;
+  background: #16243d;
+  color: #fff;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  text-transform: none;
+  padding-top: 10px;
+}
+.cover {
+  margin: 30px 60px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
